@@ -8,7 +8,7 @@ body {
    /*header top*/
 .headpress{
 	padding-top:0px;
- 	background-image: url("images/principalbackground.jpg");
+ 	background-image: url("img/00.jpg");
  	background-size:     cover;                      
     background-repeat:   no-repeat;
     background-position: center center; 
@@ -112,7 +112,7 @@ body {
 
   #oficekit{
 
-	background-image: url('images/industrial design/Oficekit.png');
+	background-image: url('img/01.png');
     background-repeat: no-repeat;
 	background-size: contain;
 	background-position:center center;
@@ -120,7 +120,7 @@ body {
 } 
   
 #beautytree{
-	background-image: url('images/industrial design/beauty tree-01.png');
+	background-image: url('img/001.png');
     background-repeat: no-repeat;
 	background-size: contain;
 	background-position:  center center;
@@ -128,23 +128,14 @@ body {
 } 
   #section23 /*logo*/ {padding-top:50px;height:100%; color: black; background-color: white; padding-bottom:100px;}
   #logo{
-  	margin-top:10%;
+  	margin-top:20%;
   	max-width:300px;
   	text-align:center;
   	margin:auto;
+  	max-height:100px;
+  
   }
   
-
-#logobeauty{
-	margin-top:20%;
-	text-align:center;
-	
-}
-#logotriang{
-	margin-top:20%;
-	text-align:center;
-	
-}
 
 .logodescription {
 	text-align:center;
