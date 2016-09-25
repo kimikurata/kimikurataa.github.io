@@ -1,0 +1,161 @@
+ /*color bule 51A9E0*/
+
+body {
+	  padding-top: 50px;
+      position: relative;
+  }
+ 
+   /*header top*/
+.headpress{
+	padding-top:0px;
+ 	background-image: url("images/principalbackground.jpg");
+ 	background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center; 
+	color:white;
+	height:600px;
+}
+#top-title{
+	text-align: center;
+	padding-top:20%;
+}
+
+#top-title h1{
+	font:Avenir;
+	font-weight: 100;
+	text-decoration: none;
+	font-size: 3vw
+}
+#top-title h2{
+	font:Myriad Pro;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 3.5vw
+}
+#cir{
+	padding-right:10%;
+}
+
+#circle{
+	height:250px;
+	width:250px;
+	text-align: center;
+	background-color:#51A9E0;
+	border-radius: 50%;
+	border: solid 3px white;
+	margin: auto;
+	padding-top:10%;
+	transform: translateY(50%);
+}
+
+
+   /*nav bar*/
+
+#navbar1{
+	
+	background-color:#51A9E0;
+	border:0px;
+	border-radius:0px;
+}
+ 
+ #navbar1 a{
+	color:white;
+}
+ 
+
+ .affix {
+      top: 0;
+      width: 100%;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 0px;
+  }
+#content{
+ 	background-color: black;
+ }
+
+ 
+  /*section parts */
+
+  		/*section 1*/
+  #section1 {padding-top:50px;height:100%; color: gray; background-color:white;}
+  #descriptiontext {
+  	text-align: justify;
+    text-justify: inter-word;
+    padding-left:10%;
+    padding-right:10%;
+    padding-top:30%;
+    font-size: 20px;
+}
+	
+    
+    	/*section 2*/
+  #section21 /*ux works*/{
+  padding-top:50px; 
+  height:100%; 
+  color: black; 
+  background-color: white;}
+  #section22 /*industrial design*/ {padding-top:50px;height:100%; color: black; background-color: white;}
+.industrial-title{
+	font-size:18px;
+	color:#51A9E0;
+}
+.industrial-content{
+	font-size: 18px;
+	color:gray;
+	text-align: justify;
+    text-justify: inter-word;
+     padding-left:10%;
+    padding-right:10%;
+}
+
+  #oficekit{
+
+	background-image: url('images/industrial design/Oficekit.png');
+    background-repeat: no-repeat;
+	background-size: contain;
+	background-position:center center;
+    max-height:100%; 
+} 
+  
+#beautytree{
+	background-image: url('images/industrial design/beauty tree-01.png');
+    background-repeat: no-repeat;
+	background-size: contain;
+	background-position:  center center;
+    max-height:100%; 
+} 
+  #section23 /*logo*/ {padding-top:50px;height:100%; color: black; background-color: white; padding-bottom:100px;}
+  #logo{
+  	margin-top:10%;
+  	max-width:300px;
+  	text-align:center;
+  	margin:auto;
+  }
+  
+
+#logobeauty{
+	margin-top:20%;
+	text-align:center;
+	
+}
+#logotriang{
+	margin-top:20%;
+	text-align:center;
+	
+}
+
+.logodescription {
+	text-align:center;
+	color: gray;
+
+}
+  		/*section 3*/
+  #section3 {padding-top:50px;height:100%; px;color: black; background-color: white;
+  background-image: url('images/industrial design/Oficekit.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    max-height:600px; 
+    background-clip: padding-box;}
