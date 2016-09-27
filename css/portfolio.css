@@ -59,11 +59,10 @@ body {
 	border:0px;
 	border-radius:0px;
 }
- 
- #navbar1 a{
+#navbar1 a{
 	color:white;
 }
- 
+
 
  .affix {
       top: 0;
@@ -81,7 +80,12 @@ body {
   /*section parts */
 
   		/*section 1*/
-  #section1 {padding-top:50px;height:100%; color: gray; background-color:white;}
+  #section1 {padding-top:50px;height:100%; 
+  color: gray; 
+  background-color:white;
+  padding-left:10%;
+  padding-right:10%;
+  }
   #descriptiontext {
   	text-align: justify;
     text-justify: inter-word;
@@ -89,6 +93,8 @@ body {
     padding-right:10%;
     padding-top:30%;
     font-size: 20px;
+    color;black;
+    
 }
 	
     
@@ -97,8 +103,30 @@ body {
   padding-top:50px; 
   height:100%; 
   color: black; 
-  background-color: white;}
-  #section22 /*industrial design*/ {padding-top:50px;height:100%; color: black; background-color: white;}
+  background-color: white;
+  padding-left:10%;
+  padding-right:10%;
+}
+
+.btn-primary{
+	color:#51A9E0;
+	background:none;
+	margin:auto;
+	text-align;center;
+
+} 
+
+.modal-footer{
+	text-align: center;
+}
+  
+  
+  #section22 /*industrial design*/ {padding-top:50px;height:100%; 
+  color: black; 
+  background-color: white;
+  padding-left:10%;
+  padding-right:10%;
+  }
 .industrial-title{
 	font-size:18px;
 	color:#51A9E0;
@@ -108,7 +136,7 @@ body {
 	color:gray;
 	text-align: justify;
     text-justify: inter-word;
-     padding-left:10%;
+    padding-left:10%;
     padding-right:10%;
 }
 
@@ -129,14 +157,20 @@ body {
 	background-position:  center center;
     max-height:100%; 
 } 
-  #section23 /*logo*/ {padding-top:50px;height:100%; color: black; background-color: white; padding-bottom:100px;}
+  #section23 /*logo*/ {padding-top:50px;height:100%; 
+  color: black; 
+  background-color: white; 
+  padding-bottom:100px;
+  padding-left:10%;
+  padding-right:10%;
+  }
   #logo{
   	margin-top:20%;
   	max-width:300px;
   	text-align:center;
   	margin:auto;
   	max-height:100px;
-  
+  	
   }
   
 
@@ -158,22 +192,36 @@ body {
     background-attachment: fixed;
     background-size:100%;
 	background-clip: padding-box;
+	
 }
 
 #cuts{
+	
 	background-image: url('img/5.png');
     background-repeat: no-repeat;
 	background-size: cover;
 	background-position:  center center;
 }
 
+#contacttitle{
+
+	padding-top:500px;
+	padding-left:10%;
+    padding-right:10%;
+    
+}
+
 #social{
-	background:red;
-	padding-left:10px;
-	padding-right:10px;
+	
+	padding:10px 10px 10px 10px;
+	max-height:50px;
+	
 }
 #contact-text{
+	color:white;
 	font-size:20px;
+	height:50px;
+	padding-top:10px;
 }
 /* angulos en div
 
