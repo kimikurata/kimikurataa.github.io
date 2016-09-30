@@ -1,4 +1,6 @@
- /*color bule 51A9E0*/
+ /*color bule 51A9E0
+ 295571
+ */
 
 body {
 	  padding-top: 50px;
@@ -62,6 +64,16 @@ body {
 #navbar1 a{
 	color:white;
 }
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.dropdown>a {
+ background-color:rgba(0,0,0, .5);
+}
+#content{
+	background-color:#295571;
+}
+
+ul.nav li.dropdown ul.dropdown-menu li a:hover{
+	background-color:#51A9E0;
+}
 
 
  .affix {
@@ -72,9 +84,6 @@ body {
   .affix + .container-fluid {
       padding-top: 0px;
   }
-#content{
- 	background-color: black;
- }
 
  
   /*section parts */
