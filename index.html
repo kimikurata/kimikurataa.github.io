@@ -95,7 +95,7 @@ Hobbies: handcrafting, swimming, pinterest and 3D printing.</p>
 	<div class="row">
   		<div class="col-sm-4">
    	 <div class="thumbnail">
-    	  <img data-toggle="magnify" src="img/ux/whitier/01.png" class="img-responsive" alt="Responsive image" >
+    	  <img data-toggle="magnify" src="img/ux/whitier/1.png" class="img-responsive" alt="Responsive image" >
 
     	  <div class="caption">
         	<h3>Science Center</h3>
@@ -108,7 +108,7 @@ Hobbies: handcrafting, swimming, pinterest and 3D printing.</p>
   	</div>
   		<div class="col-sm-4">
    	 <div class="thumbnail">
-    	  <img data-toggle="magnify" src="img/ux/holiday inn/01.png" class="img-responsive" alt="Responsive image" >
+    	  <img data-toggle="magnify" src="img/ux/holiday inn/1.png" class="img-responsive" alt="Responsive image" >
 
     	  <div class="caption">
         	<h3>Holiday Inn</h3>
@@ -121,12 +121,12 @@ Hobbies: handcrafting, swimming, pinterest and 3D printing.</p>
   	</div>
   		<div class="col-sm-4">
    	 <div class="thumbnail">
-    	  <img data-toggle="magnify" src="img/ux/mi mural/01.png" class="img-responsive" alt="Responsive image" >
+    	  <img data-toggle="magnify" src="img/ux/mi mural/1.png" class="img-responsive" alt="Responsive image" >
     	  <div class="caption">
         	<h3>Mi Mural</h3>
       		<p>Description of the image</p>
   			<!-- Trigger the modal with a button -->
- 		 	<button type="button" class="btn btn-info btn-lg modal-show" data-folder="ux/mi mural" data-title="Mi mural" data-description="Brainstorm / Wireframe / High quality mockup / visual design ">See More</button>
+ 		 	<button type="button" class="btn btn-info btn-lg modal-show" data-folder="ux/mi mural" data-title="Mi mural" data-description="Brainstorm / Wireframe / High quality mockup / visual design" data-folder-size="6">See More</button>
 		 </div>      
       </div>
   	</div>	
@@ -345,12 +345,13 @@ Hobbies: handcrafting, swimming, pinterest and 3D printing.</p>
         	  			<h4 class="modal-title">bhkuvgtctgcfixctk</h4>
         			</div>
        	 			<div class="modal-body">
-        	 			 <img data-toggle="magnify" src="" class="img-responsive" alt="Responsive image" >
+        	 			 <img data-toggle="magnify" src="" class="img-responsive" alt="Responsive image"data-folder-size="" data-current-pic="1" >
+        	 			 <br />
         	 			 <p></p>
        	 			</div>
         			<div class="modal-footer">
-        				<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-menu-left"></span></button>
-        				<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-menu-right"></span></button>
+        				<button type="button" class="btn btn-primary previous" disabled><span class="glyphicon glyphicon-menu-left"></span></button>
+        				<button type="button" class="btn btn-primary next"><span class="glyphicon glyphicon-menu-right"></span></button>
         			</div>
      	 		</div>
      	 		
@@ -364,12 +365,68 @@ Hobbies: handcrafting, swimming, pinterest and 3D printing.</p>
 		
 		var folder = $(this).data('folder');		
 		var modalTitle = $(this).data('title');			
-		var modalDescription = $(this).data('description');
-				
-		var imgPath = 'img/' + folder + '/01.png';
+		var modalDescription = $(this).data('description');				
+		var imgPath = 'img/' + folder + '/1.png';
+		var folderSize = $(this).data('folder-size');				
+		
 		$('#myModal div.modal-body img').attr('src', imgPath);
-		$('#myModal div.modal div.modal-header h4').text(modalTitle);	
+			
+		$('#myModal div.modal-body img').data('folder-size', folderSize);		
+		$('#myModal div.modal-body img').data('folder', folder);
+		
+		$('div.modal-header > h4').text(modalTitle);	
 	    $('#myModal div.modal-body p').text(modalDescription);
+	    $("#myModal").modal();
+
 	});
+	
+	$('div.modal-footer > button.next').on('click', function(e, o) {
+		var currentPic = $('#myModal div.modal-body img').data('current-pic');
+		var folderSize = $('#myModal div.modal-body img').data('folder-size');		
+		var folder = $('#myModal div.modal-body img').data('folder');
+		
+		if(currentPic < folderSize) {
+		
+			currentPic++;
+			var imgPath = 'img/' + folder + '/' + currentPic +'.png';
+			$('#myModal div.modal-body img').data('current-pic', currentPic);
+			$('#myModal div.modal-body img').attr('src', imgPath);
+		
+		}
+		
+		toggleModalArrows(currentPic, folderSize);
+	});
+		
+	$('div.modal-footer button.previous').on('click', function(e, o) {
+		var currentPic = $('#myModal div.modal-body img').data('current-pic');
+		var folderSize = $('#myModal div.modal-body img').data('folder-size');		
+		var folder = $('#myModal div.modal-body img').data('folder');
+		
+		if(currentPic > 1) {
+		
+			currentPic--;
+			var imgPath = 'img/' + folder + '/' + currentPic +'.png';
+			$('#myModal div.modal-body img').data('current-pic', currentPic);
+			$('#myModal div.modal-body img').attr('src', imgPath);
+					
+		}
+		toggleModalArrows(currentPic, folderSize);
+	});
+	
+	function toggleModalArrows(currentPic, folderSize){
+	
+		if(currentPic < folderSize){
+			$('div.modal-footer > button.next').removeAttr('disabled');
+		}
+		else{			
+			$('div.modal-footer > button.next').attr('disabled');
+		}
+		if(currentPic > 1){		
+			$('div.modal-footer > button.previous').removeAttr('disabled');
+		}
+		else{		
+			$('div.modal-footer > button.previous').attr('disabled');
+		}
+	}
 </script>
 </html>
