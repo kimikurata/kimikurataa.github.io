@@ -346,6 +346,7 @@ Hobbies: handcrafting, swimming, pinterest and 3D printing.</p>
         			</div>
        	 			<div class="modal-body">
         	 			 <img data-toggle="magnify" src="" class="img-responsive" alt="Responsive image" >
+        	 			 <p></p>
        	 			</div>
         			<div class="modal-footer">
         				<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-menu-left"></span></button>
@@ -361,11 +362,14 @@ Hobbies: handcrafting, swimming, pinterest and 3D printing.</p>
 
 	$('.modal-show').on('click', function(e, o) {
 		
-		var folder = $(this).data('folder');
-		
+		var folder = $(this).data('folder');		
+		var modalTitle = $(this).data('title');			
+		var modalDescription = $(this).data('description');
+				
 		var imgPath = 'img/' + folder + '/01.png';
 		$('#myModal div.modal-body img').attr('src', imgPath);
-		$('#myModal').modal();
+		$('#myModal div.modal div.modal-header h4').text(modalTitle);	
+	    $('#myModal div.modal-body p').text(modalDescription);
 	});
 </script>
 </html>
