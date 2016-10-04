@@ -5,19 +5,20 @@
 body {
 	  padding-top: 50px;
       position: relative;
+      overflow-x: hidden;
   }
  
    /*header top*/
 .headpress{
 	padding-top:0px;
- 	background-image: url("img/00.jpg");
+ 	background-image: url("img/1.1.jpg");
  	background-size:     cover;                      
     background-repeat:   no-repeat;
         background-attachment: fixed;
 
     background-position: center center; 
 	color:white;
-	height:600px;
+	height:650px;
 }
 #top-title{
 	text-align: center;
@@ -64,9 +65,9 @@ body {
 #navbar1 a{
 	color:white;
 }
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.dropdown>a {
+/*.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.dropdown>a {
  background-color:rgba(0,0,0, .5);
-}
+}*/
 #content{
 	background-color:#295571;
 }
@@ -75,7 +76,17 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
 	background-color:#51A9E0;
 }
 
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    background-color:rgba(0,0,0, .5) ;
+}
 
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+	background-color:rgba(0,0,0, .5);
+}
+
+
+
+ul.nav navbar-nav li a.active {background-color: red;}
  .affix {
       top: 0;
       width: 100%;
@@ -106,13 +117,17 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
     
 }
 	
-    
+}
+  		/*division*/
+
+
+
     	/*section 2*/
-  #section21 /*ux works*/{
-  padding-top:50px; 
+  #section21 {
+  padding-top:400px; 
   height:100%; 
   color: black; 
-  background-color: white;
+  background-color: RED;
   padding-left:10%;
   padding-right:10%;
 }
@@ -157,7 +172,13 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
 	background-size: contain;
 	background-position:center center;
     max-height:100%; 
+  
 } 
+#oficekit{
+
+	height: 500px;
+  
+}   
   
 #beautytree{
 	background-image: url('img/001.png');
@@ -165,6 +186,7 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
 	background-size: contain;
 	background-position:  center center;
     max-height:100%; 
+    height:500px;
 } 
   #section23 /*logo*/ {padding-top:50px;height:100%; 
   color: black; 
@@ -210,6 +232,31 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
     background-repeat: no-repeat;
 	background-size: cover;
 	background-position:  center center;
+}
+ #section5 {
+  	padding-top:0px;
+	height:100%; px;
+  	color: white; 
+	background-color: white;
+	background-image: url('img/2.jpg');
+	background-position:  center center;
+    max-height:100%; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100%;
+	background-clip: padding-box;
+	
+}
+.der {
+position:absolite;
+left:0;
+padding-left:80px;
+}
+
+.izq {
+position: absolute;
+right: 0px;
+
 }
 
 #contacttitle{
