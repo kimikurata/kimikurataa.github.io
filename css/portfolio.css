@@ -197,13 +197,19 @@ ul.nav navbar-nav li a.active {background-color: red;}
   }
   #logo{
   	margin-top:20%;
-  	max-width:300px;
+  	
+  	max-width:100%;
   	text-align:center;
   	margin:auto;
   	max-height:100px;
   	
   }
-  
+  .logo-container{
+  	min-height: 115px;
+  }
+  .logo-container img{
+  	margin-top: 20%;
+  }
 
 .logodescription {
 	text-align:center;
