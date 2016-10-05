@@ -133,6 +133,20 @@ ul.nav navbar-nav li a.active {background-color: red;}
   padding-right:10%;
 }
 
+.thumbnail {
+	height:100%;
+}
+.btn-info {
+    color: #fff;
+    background-color: #51A9E0;
+    border-color: #51A9E0;
+}
+
+.btn-info1 {
+    color: #fff;
+    background-color:  #295571;
+    border-color: #295571;
+}
 .btn-primary{
 	color:#51A9E0;
 	background:none;
@@ -140,6 +154,7 @@ ul.nav navbar-nav li a.active {background-color: red;}
 	text-align;center;
 
 } 
+
 
 .modal-footer{
 	text-align: center;
@@ -164,7 +179,7 @@ ul.nav navbar-nav li a.active {background-color: red;}
 	text-decoration: underline;
 }
 .space{
-	padding-top:120px;
+	padding-top:100px;
 }
 .industrial-content{
 	font-size: 18px;
