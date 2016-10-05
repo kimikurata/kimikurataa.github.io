@@ -213,12 +213,31 @@ ul.nav navbar-nav li a.active {background-color: red;}
   padding-bottom:100px;
   padding-left:10%;
   padding-right:10%;
+<<<<<<< HEAD
 }
 
 .logo-container {
     min-height: 115px;
 }
 
+=======
+  }
+  #logo{
+  	margin-top:20%;
+  	
+  	max-width:100%;
+  	text-align:center;
+  	margin:auto;
+  	max-height:100px;
+  	
+  }
+  .logo-container{
+  	min-height: 115px;
+  }
+  .logo-container img{
+  	margin-top: 20%;
+  }
+>>>>>>> 1e1aa1fa8c7c5fec398f76da438a9f6ca51975df
 
 #logo {
     margin-top: 20%;
