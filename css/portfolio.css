@@ -14,12 +14,12 @@ body {
  	background-image: url("img/1.1.jpg");
  	background-size:     cover;                      
     background-repeat:   no-repeat;
-        background-attachment: fixed;
-
+    background-attachment: fixed;
     background-position: center center; 
 	color:white;
 	height:650px;
 }
+
 #top-title{
 	text-align: center;
 	padding-top:20%;
@@ -37,11 +37,16 @@ body {
 	text-decoration: none;
 	font-size: 3.5vw
 }
+
 #cir{
 	padding-right:10%;
 }
 
 #circle{
+	background-image: url('img/0001.jpg');
+	background-repeat: no-repeat;
+	background-position:center center;
+	background-size: contain;
 	height:250px;
 	width:250px;
 	text-align: center;
@@ -55,19 +60,21 @@ body {
 
 
    /*nav bar*/
+.bar-logo{
+	height:20px;
+	
+}
 
 #navbar1{
-	
 	background-color:#51A9E0;
 	border:0px;
 	border-radius:0px;
 }
+
 #navbar1 a{
 	color:white;
 }
-/*.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.dropdown>a {
- background-color:rgba(0,0,0, .5);
-}*/
+
 #content{
 	background-color:#295571;
 }
@@ -84,9 +91,6 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
 	background-color:rgba(0,0,0, .5);
 }
 
-
-
-ul.nav navbar-nav li a.active {background-color: red;}
  .affix {
       top: 0;
       width: 100%;
@@ -100,12 +104,15 @@ ul.nav navbar-nav li a.active {background-color: red;}
   /*section parts */
 
   		/*section 1*/
-  #section1 {padding-top:50px;height:100%; 
-  color: gray; 
-  background-color:white;
-  padding-left:10%;
-  padding-right:10%;
+  #section1 {
+  	padding-top:50px;
+  	height:100%; 
+  	color: black; 
+ 	background-color:white;
+  	padding-left:10%;
+  	padding-right:10%;
   }
+  
   #descriptiontext {
   	text-align: justify;
     text-justify: inter-word;
@@ -115,9 +122,6 @@ ul.nav navbar-nav li a.active {background-color: red;}
     font-size: 20px;
     color;black;
     line-height: 2;
-    
-}
-	
 }
   		/*division*/
 
@@ -125,17 +129,14 @@ ul.nav navbar-nav li a.active {background-color: red;}
 
     	/*section 2*/
   #section21 {
-  padding-top:400px; 
+  padding-top:50px; 
   height:100%; 
   color: black; 
-  background-color: RED;
   padding-left:10%;
   padding-right:10%;
 }
 
-.thumbnail {
-	height:100%;
-}
+
 .btn-info {
     color: #fff;
     background-color: #51A9E0;
@@ -240,7 +241,7 @@ ul.nav navbar-nav li a.active {background-color: red;}
     max-width: 100%;
     text-align: center;
     margin: auto;
-    max-height: 100px;
+    height: 100px;
 }
 .logodescription {
 	text-align:center;
