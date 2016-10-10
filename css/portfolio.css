@@ -6,7 +6,7 @@ body {
 	  padding-top: 50px;
       position: relative;
       overflow-x: hidden;
-  }
+}
  
    /*header top*/
 .headpress{
@@ -31,6 +31,7 @@ body {
 	text-decoration: none;
 	font-size: 3vw
 }
+
 #top-title h2{
 	font:Myriad Pro;
 	font-weight: normal;
@@ -57,12 +58,17 @@ body {
 	padding-top:10%;
 	transform: translateY(50%);
 }
-
+.name{
+	margin: auto;
+	font-size:24px;
+	background:none;
+	text-align:center;
+	padding-top:35%;
+}
 
    /*nav bar*/
 .bar-logo{
-	height:20px;
-	
+	height:20px;	
 }
 
 #navbar1{
@@ -91,7 +97,7 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
 	background-color:rgba(0,0,0, .5);
 }
 
- .affix {
+.affix {
       top: 0;
       width: 100%;
   }
@@ -104,7 +110,7 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
   /*section parts */
 
   		/*section 1*/
-  #section1 {
+#section1 {
   	padding-top:50px;
   	height:100%; 
   	color: black; 
@@ -113,7 +119,7 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
   	padding-right:10%;
   }
   
-  #descriptiontext {
+#descriptiontext {
   	text-align: justify;
     text-justify: inter-word;
     padding-left:10%;
@@ -123,6 +129,43 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
     color;black;
     line-height: 2;
 }
+
+.skillback{
+	padding: 0 25 0 25;
+	background-image: url('img/00001.png');
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position:  center center;
+    height:100%; 
+    margin:auto;
+    transform: translateY(10%);
+}
+
+.iconskill{
+	padding:10px;	 
+    display: inline-block;
+	background-color:none;
+	position: relative;
+	position:center center;
+}
+.iconskill:hover, .iconskill:active{
+	padding:0px;	
+}
+
+.toppadding{
+	padding-top:110px;
+}
+
+.bottompadding{
+	padding-bottom:100px;
+}
+	
+.tooltip .tooltiptext {
+/* Position the tooltip */
+    
+}
+
+  	
   		/*division*/
 
 
@@ -162,7 +205,9 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
 }
   
   
-  #section22 /*industrial design*/ {padding-top:50px;height:100%; 
+  #section22 /*industrial design*/ {
+  padding-top:50px;
+  height:100%; 
   color: black; 
   background-color: white;
   padding-left:10%;
@@ -179,9 +224,11 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
 	color:#295571;
 	text-decoration: underline;
 }
+
 .space{
 	padding-top:100px;
 }
+
 .industrial-content{
 	font-size: 18px;
 	color:gray;
@@ -191,7 +238,6 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
     padding-right:10%;
     
 }
-
 
   #oficekit{
 	background-color:white;
@@ -242,6 +288,8 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
     text-align: center;
     margin: auto;
     height: 100px;
+    padding-left:10%;
+  padding-right:10%;
 }
 .logodescription {
 	text-align:center;
@@ -249,7 +297,7 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
 
 }
   		/*section 3*/
-  #section3 {
+#section3 {
   	padding-top: 0px;
     height: 100%;
     color: white;
