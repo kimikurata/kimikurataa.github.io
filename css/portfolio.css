@@ -201,9 +201,8 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
 	background-position:  center center;
     max-height:100%; 
     height:500px;
-    position: center bottom;
-    padding:230px;
-    transform: translateY(25%);
+	margin:auto;
+	transform: translateY(0%);
 }   
 #beautytree{
 	background-color:white;
