@@ -52,11 +52,12 @@ body {
 }
 .name{
 	margin: auto;
-	font-size:24px;
 	background:none;
 	text-align:center;
 	padding-top:35%;
 }
+
+
    /*nav bar*/
 .bar-logo{
 	height:20px;	
@@ -89,7 +90,9 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
       padding-top: 0px;
   } 
   /*section parts */
-
+.sectiontitle{
+	padding-bottom:10px;
+}
   		/*section 1*/
 #section1 {
   	padding-top:50px;
@@ -99,6 +102,9 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
   	padding-left:10%;
   	padding-right:10%;
   } 
+  #section1:hover{
+  
+  }
 #descriptiontext {
   	text-align: justify;
     text-justify: inter-word;
@@ -144,7 +150,11 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
   color: black; 
   padding-left:10%;
   padding-right:10%;
+  padding-bottom:50px;
+  background-color:#F1F1F1;
 }
+
+
 .btn-info {
     color: #fff;
     background-color: #51A9E0;
@@ -169,24 +179,43 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
 }
   #section22 /*industrial design*/ {
   padding-top:50px;
+  padding-bottom:50px;
   height:100%; 
   color: black; 
-  background-color: white;
+  background-color: #F1F1F1;
   padding-left:10%;
   padding-right:10%;
+}
+.color{
+	background-color:#F1F1F1;
+}
+
+.industrialbox{
+	border-radius:4px;
+	background-color:white; 
+	margin: 30px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 .industrial-title{
 	font-size:18px;
 	color:#51A9E0;
 }
 .top-title{
-	padding-top:50px;
-	font-size: 24px;	
-	color:#295571;
-	text-decoration: underline;
+	padding-top:2px;
+	padding-bottom:2px;
+	padding-left:8px;
+	font-size: 24px;
+	color:white;	
+	background-color:#295571;
+	text-decoration: none;
+	border-radius:4px;
+	left:15px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 .space{
-	padding-top:100px;
+	padding-top:80px;
 }
 .industrial-content{
 	font-size: 18px;
@@ -196,17 +225,20 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
     padding-left:10%;
     padding-right:10%;   
 }
+
+
 #oficekit{
-	background-color:white;
 	background-image: url('img/01.png');
-    background-repeat: no-repeat;
+	background-repeat: no-repeat;
+	background-position:center center;
 	background-size: contain;
-	background-position:  center center;
-    max-height:100%; 
-    height:500px;
-	margin:auto;
-	transform: translateY(0%);
-}   
+	max-height:100%;
+	height:500px;
+	text-align: center;
+	background-color:white;
+	margin: auto;
+	transform: translateY(5%);
+}
 #beautytree{
 	background-color:white;
 	background-image: url('img/001.png');
@@ -214,12 +246,12 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
 	background-size: contain;
 	background-position:  center center;
     max-height:100%; 
-    height:600px;
+    height:500px;
     margin:auto;
-    transform: translateY(10%);
+    transform: translateY(5%);
 } 
 .down{
-	padding-bottom:100px;
+	padding-bottom:50px;
 }
   #section23 /*logo*/ {
   padding-top:50px;
