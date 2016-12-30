@@ -307,17 +307,22 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
   		/*section 3*/
 #section3 {
   	padding-top: 0px;
-    height: 100%;
+  	background-image: url(img/3.jpg);
+  	background-size: cover;
+  	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
     color: white;
     background-color: white;
-    background-image: url(img/3.jpg);
-    background-position: center center;
+   
+
     max-height: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
+    
+ 
     background-clip: padding-box;
 }
+
+
 #cuts{
 	
 	background-image: url('img/5.png');
@@ -327,17 +332,22 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
 }
  #section5 {
   	padding-top:0px;
-	height:100%; px;
-  	color: white; 
-	background-color: white;
-	background-image: url('img/2.png');
-	background-position:  center center;
-    max-height:100%; 
-    background-repeat: no-repeat;
+  	background-image: url('img/2.png');
+	background-size:cover;
+	background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size:100%;
+    background-position:  center center;
+  	color: white; 
+  	
+	background-color: white;
+
+    max-height:100%; 
+   
+    
 	background-clip: padding-box;	
 }
+
+
 .cen {
 	position:center center;
 	text-align:center;
