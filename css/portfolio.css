@@ -8,7 +8,7 @@ body {
    /*header top*/
 .headpress{
 	padding-top:0px;
- 	background-image: url("img/1.1.jpg");
+ 	background-image: url("img/11.png");
  	background-size:     cover;                      
     background-repeat:   no-repeat;
     background-attachment: fixed;
@@ -54,7 +54,7 @@ body {
 	margin: auto;
 	background:none;
 	text-align:center;
-	padding-top:35%;
+	transform: translateY(650%);
 }
 
 
@@ -170,10 +170,23 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
 }
 .btn-primary{
 	color:#51A9E0;
-	background:none;
+	background-color:none;
 	margin:auto;
-	text-align;center;
+	text-align:center;
+	border: none;
+	position:relative;
 } 
+.modalImgIndicator{
+	 float: right;
+	 padding-right:20px;
+}
+
+.modalimg{
+	background:none;
+	max-width:90%;
+	position:relative;
+}
+
 .modal-footer{
 	text-align: center;
 }
@@ -317,7 +330,7 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
 	height:100%; px;
   	color: white; 
 	background-color: white;
-	background-image: url('img/2.jpg');
+	background-image: url('img/2.png');
 	background-position:  center center;
     max-height:100%; 
     background-repeat: no-repeat;
@@ -354,3 +367,6 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
 	background-color: #51A9E0;
 	color:white;
 }
+
+
+

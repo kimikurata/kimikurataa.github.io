@@ -211,7 +211,7 @@ ga('send', 'pageview');
         	<h3>Office Head Quarters</h3>
       		<p>Smart Automation Building System / Office Building / Prototype</p>
   			<!-- Trigger the modal with a button -->
- 		 	<button type="button" class="btn btn-info btn-lg modal-show" data-folder="ux/head quarters" data-title="Office Head Quarters" data-description="Brain storming / High quality mockup / visual design / Prototyping" data-folder-size="8">See Project</button>
+ 		 	<button type="button" class="btn btn-info btn-lg modal-show" data-folder="ux/head quarters" data-title="Office Head Quarters" data-description="Brain storming / High quality mockup / visual design / Prototyping" data-folder-size="2">See Project</button>
 		 </div>
       </div>
   	</div>
@@ -375,16 +375,19 @@ ga('send', 'pageview');
     	  		<div class="modal-content">
      		  		<div class="modal-header">
        		   			<button type="button" class="close" data-dismiss="modal">&times;</button>
-        	  			<h4 class="modal-title">bhkuvgtctgcfixctk</h4>
+       		   			<p class="modalImgIndicator">1/7</p>
+        	  			<h4 class="modal-title">Title</h4>
         			</div>
        	 			<div class="modal-body">
-        	 			 <img  src="" class="img-responsive" alt="Responsive image"data-folder-size="" data-current-pic="1" >
-        	 			 <br />
-        	 			 <p></p>
+        	 		
+        	 			 <button type="button" class="btn btn-primary previous" disabled><span class="glyphicon glyphicon-menu-left"></span></button>
+
+        	 			 <img  src="" class="modalimg" alt="Responsive image"data-folder-size="" data-current-pic="1" >
+        	 			 <button type="button" class="btn btn-primary next"><span class="glyphicon glyphicon-menu-right"></span></button>
+
        	 			</div>
         			<div class="modal-footer">
-        				<button type="button" class="btn btn-primary previous" disabled><span class="glyphicon glyphicon-menu-left"></span></button>
-        				<button type="button" class="btn btn-primary next"><span class="glyphicon glyphicon-menu-right"></span></button>
+        					 <p></p>
         			</div>
      	 		</div>
      	 		
@@ -401,18 +404,19 @@ ga('send', 'pageview');
 		var imgPath = 'img/' + folder + '/1.png';
 		var folderSize = $(this).data('folder-size');				
 		
+		
 		$('#myModal div.modal-body img').attr('src', imgPath);
 			
 		$('#myModal div.modal-body img').data('folder-size', folderSize);		
 		$('#myModal div.modal-body img').data('folder', folder);
 		
 		$('div.modal-header > h4').text(modalTitle);	
-	    $('#myModal div.modal-body p').text(modalDescription);
+	    $('#myModal div.modal-footer p').text(modalDescription);
 	    $("#myModal").modal();
 
 	});
 	
-	$('div.modal-footer > button.next').on('click', function(e, o) {
+	$('div.modal-body > button.next').on('click', function(e, o) {
 		var currentPic = $('#myModal div.modal-body img').data('current-pic');
 		var folderSize = $('#myModal div.modal-body img').data('folder-size');		
 		var folder = $('#myModal div.modal-body img').data('folder');
@@ -428,8 +432,10 @@ ga('send', 'pageview');
 		
 		toggleModalArrows(currentPic, folderSize);
 	});
+	
+	
 		
-	$('div.modal-footer button.previous').on('click', function(e, o) {
+	$('div.modal-body button.previous').on('click', function(e, o) {
 		var currentPic = $('#myModal div.modal-body img').data('current-pic');
 		var folderSize = $('#myModal div.modal-body img').data('folder-size');		
 		var folder = $('#myModal div.modal-body img').data('folder');
@@ -448,16 +454,16 @@ ga('send', 'pageview');
 	function toggleModalArrows(currentPic, folderSize){
 	
 		if(currentPic < folderSize){
-			$('div.modal-footer > button.next').removeAttr('disabled');
+			$('div.modal-body > button.next').removeAttr('disabled');
 		}
 		else{			
-			$('div.modal-footer > button.next').attr('disabled');
+			$('div.modal-body > button.next').attr('disabled');
 		}
 		if(currentPic > 1){		
-			$('div.modal-footer > button.previous').removeAttr('disabled');
+			$('div.modal-body > button.previous').removeAttr('disabled');
 		}
 		else{		
-			$('div.modal-footer > button.previous').attr('disabled');
+			$('div.modal-body > button.previous').attr('disabled');
 		}
 	}
 </script>
