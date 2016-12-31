@@ -114,6 +114,7 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
     font-size: 20px;
     color;black;
     line-height: 2;
+    background-color:none;
 }
 .skillback{
 	padding: 0 25 0 25;
@@ -124,6 +125,7 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
     height:100%; 
     margin:auto;
     transform: translateY(10%);
+
 }
 .iconskill{
 	padding:10px;	 
@@ -135,7 +137,18 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
 .iconskill:hover, .iconskill:active{
 	padding:0px;	
 }
-
+.languageTitle{
+	position:relative;
+	text-align:left;
+	background-color:none;
+	float: left;
+	padding-left:30px;
+}
+.languagebox{
+	color:gray;
+	top:20px;
+	background-color:none;
+}
 .toppadding{
 	padding-top:110px;
 }
@@ -175,6 +188,8 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
 	text-align:center;
 	border: none;
 	position:relative;
+	min-width:4%;
+	align-items: center !important;
 } 
 .modalImgIndicator{
 	 float: right;
@@ -377,6 +392,10 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
 	background-color: #51A9E0;
 	color:white;
 }
+.clear{ 
+	clear: both;
+	background-color:red;
+	}
 
 
 
