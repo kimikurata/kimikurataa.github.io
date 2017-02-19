@@ -503,13 +503,13 @@ ga('send', 'pageview');
 	
 	function loadImage($imageSelector, imgPath) {
 
-		loadCurrentPageInfo();
 		$('.spinner').show();
 		$imageSelector.attr('src', imgPath);
 		
 		//hide the spinner, once the image has been loaded
 		$imageSelector.on('load', function() {
 			$('.spinner').hide();
+			loadCurrentPageInfo();
 		});	
 	}
 </script>
