@@ -438,11 +438,11 @@ ga('send', 'pageview');
 		var modalDescription = $(this).data('description');				
 		var imgPath = 'img/' + folder + '/1.png';
 		var folderSize = $(this).data('folder-size');				
-				
-		$imageSelector.attr('src', imgPath);
-			
+		
+		loadImage($imageSelector, imgPath);
 		$imageSelector.data('folder-size', folderSize);		
-		$imageSelector.data('folder', folder);
+		$imageSelector.data('folder', folder);		
+		$imageSelector.data('current-pic', 1);
 		
 		$('div.modal-header > h4').text(modalTitle);	
 	    $('#myModal div.modal-footer p').text(modalDescription);
@@ -460,7 +460,7 @@ ga('send', 'pageview');
 	});
 	
 	function changeImgContent(actionType) {
-	
+
 		var incremental = actionType == 'next' ? 1 : -1;		
 		var currentPic = $imageSelector.data('current-pic');
 		var folderSize = $imageSelector.data('folder-size');		
