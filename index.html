@@ -512,10 +512,20 @@ ga('send', 'pageview');
 			loadCurrentPageInfo();
 		});	
 	}
+	
 </script>
 <script>
 $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip();
+});
+
+$(document).keydown(function(e) {
+		
+   	if (e.keyCode == '37') { //LEFT ARROW
+   		changeImgContent('previous');
+   	} else if (e.keyCode == '39') { //RIGHT ARROW
+       	changeImgContent('next');
+    }		
 });
 </script>
 
