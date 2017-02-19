@@ -442,7 +442,7 @@ ga('send', 'pageview');
 		$imageSelector.data('folder-size', folderSize);		
 		$imageSelector.data('folder', folder);		
 		$imageSelector.data('current-pic', 1);		
-		loadImage($imageSelector, imgPath);
+		loadImage(imgPath);
 		
 		$('div.modal-header > h4').text(modalTitle);	
 	    $('#myModal div.modal-footer p').text(modalDescription);
@@ -473,7 +473,7 @@ ga('send', 'pageview');
 			
 			var imgPath = 'img/' + folder + '/' + currentPic +'.png';
 			$imageSelector.data('current-pic', currentPic);
-			loadImage($imageSelector, imgPath);							
+			loadImage(imgPath);							
 		}
 		
 		toggleModalArrows(currentPic, folderSize);
@@ -501,15 +501,16 @@ ga('send', 'pageview');
 		}
 	}
 	
-	function loadImage($imageSelector, imgPath) {
+	function loadImage(imgPath) {
 
 		$('.spinner').show();
 		$imageSelector.attr('src', imgPath);
-		
+		$imageSelector.css('opacity', .5);
 		//hide the spinner, once the image has been loaded
 		$imageSelector.on('load', function() {
 			$('.spinner').hide();
 			loadCurrentPageInfo();
+			$imageSelector.css('opacity', 1);
 		});	
 	}
 	
