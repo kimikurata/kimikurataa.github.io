@@ -420,7 +420,7 @@ ga('send', 'pageview');
 
        	 			</div>
         			<div class="modal-footer">
-        				<img src="img/spinner.gif" class="spinner pull-left" />	 <p></p>
+        				<img src="img/spinner.gif" class="spinner pull-left" />	 <p></p> <span id="pageInformation"></span>
         			</div>
      	 		</div>
      	 		
@@ -439,10 +439,10 @@ ga('send', 'pageview');
 		var imgPath = 'img/' + folder + '/1.png';
 		var folderSize = $(this).data('folder-size');				
 		
-		loadImage($imageSelector, imgPath);
 		$imageSelector.data('folder-size', folderSize);		
 		$imageSelector.data('folder', folder);		
-		$imageSelector.data('current-pic', 1);
+		$imageSelector.data('current-pic', 1);		
+		loadImage($imageSelector, imgPath);
 		
 		$('div.modal-header > h4').text(modalTitle);	
 	    $('#myModal div.modal-footer p').text(modalDescription);
@@ -479,6 +479,13 @@ ga('send', 'pageview');
 		toggleModalArrows(currentPic, folderSize);
 	}
 	
+	function loadCurrentPageInfo() {
+		
+		var totalPages = $imageSelector.data('folder-size');	
+		var currentPage = $imageSelector.data('current-pic');
+		$('#pageInformation').text(currentPage + ' out of ' + totalPages);
+	}
+	
 	function toggleModalArrows(currentPic, folderSize){
 		
 		if(currentPic < folderSize) {
@@ -495,7 +502,8 @@ ga('send', 'pageview');
 	}
 	
 	function loadImage($imageSelector, imgPath) {
-	
+
+		loadCurrentPageInfo();
 		$('.spinner').show();
 		$imageSelector.attr('src', imgPath);
 		
