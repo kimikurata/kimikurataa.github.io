@@ -397,6 +397,10 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
 	clear: both;
 	background-color:red;
 	}
-
+.spinner {
+	width: 30px;
+	height: 30px;
+	display: none;	
+}
 
 

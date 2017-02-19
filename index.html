@@ -414,14 +414,13 @@ ga('send', 'pageview');
         			</div>
        	 			<div class="modal-body">
         	 		
-        	 			 <button type="button" class="btn btn-primary previous" disabled><span class="glyphicon glyphicon-menu-left"></span></button>
-
+        	 			 <button type="button" class="btn btn-primary previous"><span class="glyphicon glyphicon-menu-left"></span></button>
         	 			 <img  src="" class="modalimg" alt="Responsive image"data-folder-size="" data-current-pic="1" >
         	 			 <button type="button" class="btn btn-primary next"><span class="glyphicon glyphicon-menu-right"></span></button>
 
        	 			</div>
         			<div class="modal-footer">
-        					 <p></p>
+        				<img src="img/spinner.gif" class="spinner pull-left" />	 <p></p>
         			</div>
      	 		</div>
      	 		
@@ -429,6 +428,8 @@ ga('send', 'pageview');
   			</div>
 </body>
 <script type="text/javascript">
+	
+	var $imageSelector = $('#myModal div.modal-body img');
 
 	$('.modal-show').on('click', function(e, o) {
 		
@@ -437,72 +438,75 @@ ga('send', 'pageview');
 		var modalDescription = $(this).data('description');				
 		var imgPath = 'img/' + folder + '/1.png';
 		var folderSize = $(this).data('folder-size');				
-		
-		
-		$('#myModal div.modal-body img').attr('src', imgPath);
+				
+		$imageSelector.attr('src', imgPath);
 			
-		$('#myModal div.modal-body img').data('folder-size', folderSize);		
-		$('#myModal div.modal-body img').data('folder', folder);
+		$imageSelector.data('folder-size', folderSize);		
+		$imageSelector.data('folder', folder);
 		
 		$('div.modal-header > h4').text(modalTitle);	
 	    $('#myModal div.modal-footer p').text(modalDescription);
+	    toggleModalArrows(1, folderSize);
 	    $("#myModal").modal();
 
 	});
 	
 	$('div.modal-body > button.next').on('click', function(e, o) {
-		var currentPic = $('#myModal div.modal-body img').data('current-pic');
-		var folderSize = $('#myModal div.modal-body img').data('folder-size');		
-		var folder = $('#myModal div.modal-body img').data('folder');
+		changeImgContent('next');
+	});
 		
-		if(currentPic < folderSize) {
+	$('div.modal-body > button.previous').on('click', function(e, o) {
+		changeImgContent('previous');
+	});
+	
+	function changeImgContent(actionType) {
+	
+		var incremental = actionType == 'next' ? 1 : -1;		
+		var currentPic = $imageSelector.data('current-pic');
+		var folderSize = $imageSelector.data('folder-size');		
+		var folder = $imageSelector.data('folder');
 		
-			currentPic++;
+		if( (actionType == 'previous' && currentPic > 1) 
+			|| (actionType == 'next' && currentPic < folderSize)) {
+			
+			currentPic += incremental;
+			
 			var imgPath = 'img/' + folder + '/' + currentPic +'.png';
-			$('#myModal div.modal-body img').data('current-pic', currentPic);
-			$('#myModal div.modal-body img').attr('src', imgPath);
-		
+			$imageSelector.data('current-pic', currentPic);
+			loadImage($imageSelector, imgPath);							
 		}
 		
 		toggleModalArrows(currentPic, folderSize);
-	});
-	
-	
-		
-	$('div.modal-body button.previous').on('click', function(e, o) {
-		var currentPic = $('#myModal div.modal-body img').data('current-pic');
-		var folderSize = $('#myModal div.modal-body img').data('folder-size');		
-		var folder = $('#myModal div.modal-body img').data('folder');
-		
-		if(currentPic > 1) {
-		
-			currentPic--;
-			var imgPath = 'img/' + folder + '/' + currentPic +'.png';
-			$('#myModal div.modal-body img').data('current-pic', currentPic);
-			$('#myModal div.modal-body img').attr('src', imgPath);
-					
-		}
-		toggleModalArrows(currentPic, folderSize);
-	});
+	}
 	
 	function toggleModalArrows(currentPic, folderSize){
+		
+		if(currentPic < folderSize) {
+			$('div.modal-body > button.next').removeClass('disabled');
+		} else {			
+			$('div.modal-body > button.next').addClass('disabled');
+		}
+		
+		if(currentPic > 1) {		
+			$('div.modal-body > button.previous').removeClass('disabled');
+		} else {		
+			$('div.modal-body > button.previous').addClass('disabled');
+		}
+	}
 	
-		if(currentPic < folderSize){
-			$('div.modal-body > button.next').removeAttr('disabled');
-		}
-		else{			
-			$('div.modal-body > button.next').attr('disabled');
-		}
-		if(currentPic > 1){		
-			$('div.modal-body > button.previous').removeAttr('disabled');
-		}
-		else{		
-			$('div.modal-body > button.previous').attr('disabled');
-		}
+	function loadImage($imageSelector, imgPath) {
+	
+		$('.spinner').show();
+		$imageSelector.attr('src', imgPath);
+		
+		//hide the spinner, once the image has been loaded
+		$imageSelector.on('load', function() {
+			$('.spinner').hide();
+		});	
 	}
 </script>
 <script>
-$(document).ready(function(){
+$(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip();
 });
 </script>
