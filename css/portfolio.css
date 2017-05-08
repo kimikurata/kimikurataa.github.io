@@ -144,6 +144,9 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
 	float: left;
 	padding-left:30px;
 }
+.language{
+background-color: #F1F1F1;
+}
 .languagebox{
 	color:gray;
 	top:20px;
@@ -220,6 +223,11 @@ ul.nav li.dropdown ul.dropdown-menu li a:hover{
 }
 
 .industrialbox{
+	border-radius:4px;
+	background-color:white; 
+	margin: 30px;
+}
+.industrialboxx{
 	border-radius:4px;
 	background-color:white; 
 	margin: 30px;
