@@ -36,10 +36,10 @@ body {
 	padding-right:10%;
 }
 #circle{
-	background-image: url('img/0001.jpg');
+	background-image: url('img/000001.png');
 	background-repeat: no-repeat;
 	background-position:center center;
-	background-size: contain;
+	background-size: ;
 	height:250px;
 	width:250px;
 	text-align: center;
