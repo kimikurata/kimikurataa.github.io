@@ -5,6 +5,7 @@ body {
       position: relative;
       overflow-x: hidden;
 }
+
    /*header top*/
 .headpress{
 	padding-top:0px;
@@ -24,13 +25,13 @@ body {
 	font:Avenir;
 	font-weight: 100;
 	text-decoration: none;
-	font-size: 3vw
+	font-size: 3em
 }
 #top-title h2{
 	font:Myriad Pro;
 	font-weight: normal;
 	text-decoration: none;
-	font-size: 3.5vw
+	font-size: 2.5em
 }
 #cir{
 	padding-right:10%;
@@ -169,15 +170,13 @@ background-color: #F1F1F1;
   padding-bottom:50px;
   background-color:#F1F1F1;
 }
-
-
 .btn-info {
-    color: #fff;
+    color: #ffffff;
     background-color: #51A9E0;
     border-color: #51A9E0;
 }
 .btn-info1 {
-    color: #fff;
+    color: #ffffff;
     background-color:  #295571;
     border-color: #295571;
 }
@@ -392,7 +391,7 @@ background-color: #F1F1F1;
 }
 #contact-text{
 	color:white;
-	font-size:20px;
+	font-size:1.5em;
 	height:50px;
 	padding-top:10px;
 }
