@@ -3434,7 +3434,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/hector/Documents/portfolio/kimi_portfolio/portfolio/src/polyfills.ts */"./src/polyfills.ts");
+module.exports = __webpack_require__(/*! /Users/MariKurata/Desktop/proyecto-kimi-git-portfolio/kimi-portfolio/src/polyfills.ts */"./src/polyfills.ts");
 
 
 /***/ })
