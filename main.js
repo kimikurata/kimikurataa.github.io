@@ -3739,7 +3739,7 @@ class AboutComponent {
     }
     ngOnInit() {
         // function([string1, string2],target id,[color1,color2])    
-        consoleText(['good listener', 'problem sovler', 'versatile designer'], 'text', ['#29BCC8', '#573EFB', '#0076FF']);
+        consoleText(['good listener', 'problem solver', 'versatile designer'], 'text', ['#29BCC8', '#573EFB', '#0076FF']);
         function consoleText(words, id, colors) {
             if (colors === undefined)
                 colors = ['#fff'];
