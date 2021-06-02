@@ -1,0 +1,173 @@
+.itroduction-box{
+    width: 35%;
+}
+.introduction-text{
+    width: 97%;
+    margin-bottom: 25px;
+}
+.headshot{
+    width: 420px;
+    margin: auto;
+    flex-grow: 1.2;
+}
+.visitme_link{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color:#3C3C3C;
+    padding: 10px 20px 10px 0;
+}
+
+.visitme_link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s ease-in;
+}
+
+.visitme_link:hover::after {
+    width: 100%;
+}
+
+.visitme_link:last-child{
+    padding-left: 20px;
+}
+
+.separator{
+    width: 1px;
+    height: 20px;
+    letter-spacing: 0.5px;
+    background-color: #3C3C3C;
+}
+
+@media screen and (max-width: 800px) {
+    .itroduction-box {
+      justify-content: center;
+      text-align: center;
+      padding-top: 15vh;
+    }
+    .personal-links {
+        justify-content: center;
+    }
+    .headshot-box{
+        margin-top: var(--space-sm);
+        flex-grow: 1;
+    }
+  }
+  .image_box1{
+    position: relative;
+    flex-grow: 1;
+    width: 300px;
+}
+
+
+
+.workimage12{
+    position: absolute;
+    width: 300px;
+    object-fit: contain;
+}
+
+#wworkimage11{
+    width: 300px;
+    object-fit: contain;
+}
+
+.content-box{
+    width: 300px;
+}
+@media screen and (max-width: 800px) {
+   .image_box1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+   }
+   
+   .content-box{
+    margin-top: var(--space-sm);   
+    width: 100%;
+    text-align: center;
+    }
+}
+.work_link{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 200;
+    padding: 0px 10px 10px 0px;
+    letter-spacing: 0.5px
+    
+}
+
+.work_link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--color-black);
+    transition: width .3s ease-in;
+}
+
+.work_link:hover::after, .work_link.selected::after {
+    width: 100%;
+}
+.content-box3{
+    max-width: 280px;
+}
+.image_box3{
+    position: relative;
+    max-width: 500px;
+}
+
+.workimage32{
+    position: absolute;
+    width: 500px;
+    object-fit: contain;
+}
+@media screen and (max-width: 800px) {
+    .image_box3{
+     display: flex;
+     justify-content: center;
+     width: 100%;
+    }
+    
+    .content-box3{
+        max-width: 800px;
+     margin-top: var(--space-sm);   
+     width: 100%;
+     text-align: center;
+     
+
+     }
+ }
+ .work4_box{
+    padding-top: 130px;
+    padding-bottom: 130px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(images/holidayinn1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 80vh;
+}
+
+.titles_content4{
+    width: 100%;
+    flex-grow: 1;
+    margin-right: 20px;
+}
+@media screen and (max-width: 800px) {
+    .work4_box{
+        background-position: right bottom;
+        background-size: 1000px;
+        height: 60vh;
+    }
+
+ }

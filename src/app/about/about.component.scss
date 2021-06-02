@@ -1,0 +1,29 @@
+.about-bg{
+    background-image: url(images/about-bg.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.about-text-box{
+    width: 60%;
+}
+.introduction-animation-box{
+    padding-top: 50vh;
+
+}
+.typewrite{
+    text-decoration: none;
+    pointer-events: none;
+    color: var(--color-pure-black)  !important;
+}
+@media screen and (max-width: 800px) {
+    .about-bg{
+        background-image: url(images/about-g-mobile.png);
+    }
+    .about-text-box{
+        width: 100%;
+    }
+    .typewrite{
+        text-align: center;
+    }
+  }
